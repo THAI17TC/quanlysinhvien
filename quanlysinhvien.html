@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+            constructor(ten,tuoi,diemtoan,diemly,diemhoa){
+                this._ten = ten;
+                this._tuoi = tuoi;
+                this._diemtoan= diemtoan;
+                this._diemly = diemly;
+                this._diemhoa = diemhoa;
+            }
+            get ten(){
+                return this._ten;
+            }
+            get tuoi(){
+                return this._tuoi;
+            }
+            get diemtoan(){
+                return this._diemtoan
+            }
+            set diemtoan(dt){
+               if (dt<0){
+                document.write('khonghople')
+               }
+               else if(dt>10) {
+                   document.write('khong hop le');
+               }
+               else{
+                   this._diemtoan = dt;
+               }
+                     
+            }
+            get diemly(){
+                return this._diemly;
+            }
+            set diemly(dl){   
+                if (dl<0){
+                document.write('khonghople')
+               }
+               else if(dl>10) {
+                   document.write('khong hop le');
+               }
+               else{
+                   this._diemly = dl;
+               }             
+               
+            }
+            get diemhoa(){
+                return this._diemhoa;
+            }
+            set diemhoa(dh){
+                if (dh<0){
+                document.write('khonghople')
+               }
+               else if(dh>10) {
+                   document.write('khong hop le');
+               }
+               else{
+                   this._diemhoa = dh;
+               }
+               
+            }
+            
+            
+
+
+        }
+        var sinhvien1 = new Person('nguyenducthai',24,8,5,9);
+        document.write('hoc sinh:' + sinhvien1.ten+' '+ 'tuoi:' +sinhvien1.tuoi+' '+'diemtoan:'+ sinhvien1.diemtoan+' '+'diemly:'+sinhvien1.diemly+' '+'diemhoa:'+sinhvien1.diemhoa+"<br/>" );
+        var sinhvien2 = new Person('nguyenducpin',23,5,6,7);
+        document.write('hoc sinh:' + sinhvien2.ten+' '+ 'tuoi:' +sinhvien2.tuoi+' '+'diemtoan:'+sinhvien2.diemtoan+' '+'diemly:'+sinhvien2.diemly+' '+'diemhoa:'+sinhvien2.diemhoa+"<br/>");
+        var sinhvien3 = new Person('nguyenducpin',20,7,9,3);
+        document.write('hoc sinh:' +sinhvien3.ten+' '+ 'tuoi:' +sinhvien3.tuoi+' '+'diemtoan:'+ sinhvien3.diemtoan+' '+'diemly:'+sinhvien3.diemly+' '+'diemhoa:'+sinhvien3.diemhoa+"<br/>");
+        
+
+
+        
+                
+
+    </script>
+      
+    
+</body>
+</html>
